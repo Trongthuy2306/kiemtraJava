@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.Thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Kiểm tra</title>
+    <link th:fragment = "link-css" rel="stylesheet" th:href="@{/css/bootstrap.min.css}">
+
+</head>
+<body>
+    <header th:fragment="header">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+            </div>
+        </nav>
+    </header>
+    <div th:insert="~{::${content}}">
+
+    </div>
+    <footer th:fragment = "footer">
+        <script th:src="@{/js/bootstrap.min.js}"></script>
+        <h3 class="text-center">Nguyễn Trọng Thủy - 2082500463</h3>
+    </footer>
+</body>
+</html>
